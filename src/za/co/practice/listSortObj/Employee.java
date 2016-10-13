@@ -1,10 +1,21 @@
 package za.co.practice.listSortObj;
 
-/**
- * Created by sa on 13-10-2016.
- */
+import java.util.Comparator;
+
 public class Employee implements Comparable<Employee>
 {
+    /**
+     * Static class
+     */
+    /*public static class ReverseDesignationComparator implements Comparator<Employee>
+    {
+        @Override
+        public int compare(Employee e1, Employee e2)
+        {
+            return - (e1.getDesignation().compareTo(e2.getDesignation()));
+        }
+    }*/
+
     private int id;
     private String name;
     private String  designation;

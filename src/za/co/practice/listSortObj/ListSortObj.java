@@ -2,6 +2,7 @@ package za.co.practice.listSortObj;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ListSortObj
@@ -21,6 +22,22 @@ public class ListSortObj
          * Use of custom made Comparator which sort the Obj designation in reverse
          */
 //        Collections.sort(employees, new ReverseDesignationComparator());
+
+        /**
+         * To use the static class mentioned in Employee class
+         */
+//        Collections.sort(employees, new Employee.ReverseDesignationComparator());
+
+        /**
+         * To use Anonymous class
+         */
+        /*Collections.sort(employees, new Comparator<Employee>()
+        {
+            @Override
+            public int compare(Employee e1, Employee e2) {
+                return - (e1.getDesignation().compareTo(e2.getDesignation()));
+            }
+        });*/
 
         for (Employee employee : employees)
         {
