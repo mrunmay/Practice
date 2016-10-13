@@ -5,7 +5,7 @@ import java.util.Comparator;
 public class Employee implements Comparable<Employee>
 {
     /**
-     * Static class
+     * Static inner class
      */
     /*public static class ReverseDesignationComparator implements Comparator<Employee>
     {
