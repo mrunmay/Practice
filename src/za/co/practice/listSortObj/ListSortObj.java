@@ -17,6 +17,11 @@ public class ListSortObj
 
         Collections.sort(employees);
 
+        /**
+         * Use of custom made Comparator which sort the Obj designation in reverse
+         */
+//        Collections.sort(employees, new ReverseDesignationComparator());
+
         for (Employee employee : employees)
         {
             System.out.println(employee.getId());
