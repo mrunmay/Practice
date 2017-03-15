@@ -16,6 +16,7 @@ public class Prime
                     break;
                 }
             }
+
             if (isPrime)
             {
                 System.out.print(i + " ");
